@@ -500,17 +500,7 @@ a{
     }
 }
 
-@media (max-width:767px){
-    .navbar-btns{
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        gap: 10px;
-        position: relative;
-        right: 30px;
-    }
-    
-}
+
 
 @media (max-width:576px){
     .section-text-arrows{
@@ -525,6 +515,14 @@ a{
     .banner-text p{
         font-size: 10px;
     }
+    .navbar-btns{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+        margin-right: 50px;
+        
+    }
     
 }
 @media (max-width:437px){
@@ -535,6 +533,14 @@ a{
     .banner-text p{
         font-size: 8px;
     }
+    .navbar-btns{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+        margin-right: 50px;
+        
+    }
 }
 @media (max-width:383px){
     .navbar-btns{
@@ -542,7 +548,7 @@ a{
         flex-direction: column;
         align-items: start;
         gap: 10px;
-        
+        margin-right: 70px;
         
     }
 }
