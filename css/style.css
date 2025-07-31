@@ -76,11 +76,16 @@ a{
     border-radius: 10px;
     
 }
-
 .navbar-nav li a{
     font-size: 12px;
+    font-family: "Inter", sans-serif;
+    font-weight:500;
     margin-left: 10px;
     color: #fffcfc;
+    transition: all 0.4s ease;
+}
+.navbar-nav li a:hover{
+    color: rgb(235, 158, 43) !important;
 }
 .navbar-btn-2{
     background-color: #fe3697;
@@ -91,6 +96,11 @@ a{
     padding: 8px 45px;
     color: white;
     width: 138px;
+    transition: all 0.5s ease;
+}
+.navbar-btn-2:hover{
+    background-color: rgb(255, 153, 0);
+    color: black;
 }
 .navbar-btn-3{
     border: 2px solid #fe3697;
