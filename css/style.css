@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+/* font-family: "Inter", sans-serif; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body,html{
+    overflow-x: hidden;
+}
+/* common class */
+.section-padding{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.section-heading{
+    font-size: 40px;
+    color: #ffffff;
+    margin-bottom: 53px;
+    font-family: "Inter", sans-serif;
+}
+.section-text-arrows{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.section-arrows{
+    gap: 15px;
+}
+.arrows{
+    height: 42px;
+    width: 47px;
+    background-color: #1e1e1e;
+    border: 1px solid #fffcfc;
+    border-radius: 10px;
+}
+/* .container{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 15px;
+} */
+/* common elements */
+img{
+    height: auto;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+a{
+    display: inline-block;
+}
+/* navbar */
+.navbar{
+    background-color: #161617;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+.navbar-btn-1{
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+    padding: 10px 16px;
+    border-radius: 10px;
+    
+}
+
+.navbar-nav li a{
+    font-size: 12px;
+    margin-left: 10px;
+    color: #fffcfc;
+}
+.navbar-btn-2{
+    background-color: #fe3697;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 45px;
+    color: white;
+    width: 138px;
+}
+.navbar-btn-3{
+    border: 2px solid #fe3697;
+    border-radius: 10px;
+    background-color: #161617;
+    color: white;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    padding: 8px 28px;
+    width: 138px;
+    transition: all 0.4s ease;
+}
+.navbar-btn-3:hover{
+    background-color: #fe3697;
+    border:2px solid #ffffff;
+    color: white;
+}
+.navbar-btns{
+    display: flex;
+    gap: 28px;
+}
+/* banner */
+.banner{
+    background-color: black;
+}
+.banner .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.banner-img-1{
+    height: 198px;
+    width: 335px;
+    border-radius: 20px;
+}
+
+.banner-btn{
+    padding: 13px 28px;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    
+}
+.banner-btn-1{
+    background-image: linear-gradient(90deg,#465ee3 0%,#ad16bb 36%,#c12978 71%,#ce2b2e 100%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.banner-btn-2{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+.banner-btn-2:hover{
+    background-color: #c12978;
+}
+.banner-btns{
+    margin-top: 43px;
+    display: flex;
+    gap: 23px;
+}
+.banner-text h2{
+   
+    width: 100%;
+    font-size: 40px;
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+    color: white;
+}
+.banner-text p{
+    max-width: 574px;
+    width: 100%;
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+    color: #857c7c;
+}
+/* latest work */
+.monkey{
+    
+    border: none;
+    border-radius: 60px;
+}
+.latest-work{
+    background-color: #1e1e1e;
+}
+/* live auction */
+.live-auction{
+    background-color: #1e1e1e;
+}
+.card{
+    background-color: #212325;
+    border-radius: 20px;
+}
+.card-img-top{
+    padding: 20px;
+}
+.card-body h5{
+    font-size: 22px;
+    color: white;
+}
+.card-body p{
+   color: #36cb0c;
+   font-size: 22px;
+   font-weight: bold;
+}
+.card-text{
+    margin-top: 23px;
+    display: flex;
+    justify-content: space-between;
+}
+.card-text p{
+    font-size: 16px;
+    color: #a3b0b1;
+}
+.card-btn{
+    background-color: #212325 ;
+    border: 2px solid #fe3697;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 5px 10px;
+    font-size: 16px;
+    position: relative;
+    bottom: 7px;
+    transition: all 0.4s ease;
+}
+.card-btn:hover{
+    background-color: #fe3697;
+    border:2px solid #ffffff;
+    color: white;
+}
+.card-heading{
+    display: flex;
+    justify-content: space-between;
+}
+.live-auction-swiper-2{
+    margin-top: 29px;
+}
+/* top-collection */
+.top-collection{
+    background-color: #1e1e1e;
+}
+.collection-cards{
+    border: 1px solid #353939;
+    border-radius: 30px;
+    padding: 19px 18px;
+    /* width: 453px;
+    height: 110px; */
+}
+.top-collection-items img{
+    padding: 10px;
+}
+.collection-title{
+    font-size: 14px;
+    color: white;
+    
+}
+.title-1{
+    position: relative;
+    top: 3px;
+}
+.card-p{
+    font-size: 10px;
+    color: #a3b0b1;
+    position: relative;
+    top: 10px;
+}
+.collection-percentage{
+    color: #36cb0c;
+    font-size: 14px;
+}
+.collection-percentage:hover{
+    background-color: #35cb0c46;
+    border: none;
+    border-radius: 20px;
+}
+.text-danger:hover{
+    background-color: #e90b0b46;
+    border: none;
+    border-radius: 20px;
+}
+/* discover-nft */
+.discover-nft{
+    background-color: #1e1e1e;
+}
+/* popular-categories */
+.popular-categories{
+    background-color: #1e1e1e;
+}
+.popular-text{
+    margin: auto;
+}
+/* sell-nft */
+.sell-nft{
+    background-color: #1e1e1e;
+}
+.sell-text{
+    color: #a3b0b1;
+    font-size: 13px;
+}
+.sell-body h5{
+    font-size: 18px;
+    color: #ffffff;
+}
+.sell-card{
+    padding: 26px 24px;
+    background-color: #212325;
+}
+.sell-img{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    right: 20px;
+}
+.sell-nft h2{
+    text-align: center;
+    margin-bottom: 80px;
+    color: #ffffff;
+}
+/* article */
+.latest-articles{
+    background-color: #1e1e1e;
+}
+.article-card-heading{
+    display: flex;
+    flex-direction: column;
+}
+.article-card-heading h5{
+    font-size: 18px;
+}
+.article-card-heading p{
+    font-size: 13px;
+    color: #a3b0b1;
+    font-weight:400;
+}
+.article-card-heading .artile-p-2{
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.article-card-heading .artile-p-2 span a{
+    border: 0.5px solid #ce2b2e;
+    border-radius: 100px;
+    width: 28px;
+    height: 28px;
+    position: relative;
+    top: 9px;
+    left: 5px;
+}
+.article-card-heading .artile-p-2 span a:hover{
+    background-color: #ce2b2e;
+}
+/* footer */
+.footer{
+    background-color: black;
+}
+.footer-logo{
+    position: relative;
+    bottom: 15px;
+}
+.footer-logo-p{
+    font-size: 11px;
+    color: #a3b0b1;
+    font-weight: 500;
+    line-height: 1.6;
+}
+.footer-slide-2 h2{
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+    position: relative;
+    left: 31px;
+    margin-bottom: 40px;
+}
+.footer-slide-2 ul li{
+    list-style: none;
+    color: #a3b0b1;
+    margin-bottom: 17px;
+    font-size: 11px;
+    font-weight: 500;
+}
+.footer-slide-3 h2{
+    font-size: 19px;
+    color: #ffffff;
+    margin-bottom: 28px;
+}
+.footer-btn-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: #656b6b;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 500;
+}
+.footer-btn-div button{
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg,#465ee3 0%,#ad16bb 36%,#c12978 71%,#ce2b2e 100%);
+    color: #ffffff;
+}
+.footer-slide-3 h3{
+    font-size: 17px;
+    color: #ffffff;
+    margin-top: 40px;
+    margin-bottom: 22px;
+}
+.footer-hr{
+    color: #a3b0b1;
+}
+.copyright{
+    color: #a3b0b1;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1199px){
+    .navbar-btn-1{
+    font-size: 8px;
+    font-family: "Inter", sans-serif;
+    padding: 6px 10px;
+    border-radius: 10px;
+    
+}
+
+.navbar-nav li a{
+    font-size: 10px;
+    margin-left: 10px;
+    color: #fffcfc;
+}
+.navbar-btn-2{
+    background-color: #fe3697;
+    font-size: 8px;
+    font-family: "Inter", sans-serif;
+    border: none;
+    border-radius: 10px;
+    padding: 6px 25px;
+    color: white;
+    width: 138px;
+}
+.navbar-btn-3{
+    border: 2px solid #fe3697;
+    border-radius: 8px;
+    background-color: #161617;
+    color: white;
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+    padding: 6px 18px;
+    width: 138px;
+   
+}
+.navbar-btns{
+    display: flex;
+    gap: 10px;
+}
+.banner-img-1{
+    height: 163px;
+    width: 335px;
+    border-radius: 20px;
+}
+}
+
+@media (max-width:991px){
+    .banner-text h2{
+        font-size: 60px;
+    }
+    .banner-text p{
+        margin: auto;
+    }
+    .banner-imgs-2{
+        margin-top: 20px;
+        display: flex;
+        gap: 25px;
+    }
+    .banner-btns{
+        display: flex;
+        justify-content: center;
+    }
+    .navbar-btns{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+        position: relative;
+        right: 30px;
+    }
+}
+
+@media (max-width:767px){
+    .navbar-btns{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+        position: relative;
+        right: 30px;
+    }
+    
+}
+
+@media (max-width:576px){
+    .section-text-arrows{
+        flex-direction: column;
+    }
+    .section-arrows{
+        margin-bottom: 20px;
+    }
+    .banner-text h2{
+        font-size: 50px;
+    }
+    .banner-text p{
+        font-size: 10px;
+    }
+    
+}
+@media (max-width:437px){
+    
+    .banner-text h2{
+        font-size: 30px;
+    }
+    .banner-text p{
+        font-size: 8px;
+    }
+}
+@media (max-width:383px){
+    .navbar-btns{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+        
+        
+    }
+}
