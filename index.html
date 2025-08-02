@@ -91,7 +91,9 @@
                 <a class="nav-link text-white" href="#pages">Pages</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#nft-collections">NFT Collections</a>
+                <a class="nav-link text-white" href="#nft-collections"
+                  >NFT Collections</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="#products">Products</a>
@@ -99,11 +101,82 @@
             </ul>
           </div>
           <ul class="navbar-btns mt-3" role="search">
-            <button class="navbar-btn-2" type="submit">Login</button>
+            <button
+              class="navbar-btn-2"
+              type="submit"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+            >
+              Login
+            </button>
             <button class="navbar-btn-3" type="submit">Create NFT</button>
           </ul>
         </div>
       </nav>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="loginModal"
+        tabindex="-1"
+        aria-labelledby="loginModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">
+                Login to Your Account
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <!-- Modal Body (Form) -->
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="loginEmail" class="form-label"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="loginEmail"
+                    placeholder="name@example.com"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="loginPassword" class="form-label">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="loginPassword"
+                    placeholder="Enter your password"
+                  />
+                </div>
+              </form>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="submit" class="btn btn-modal"><a href="#">Login</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -825,10 +898,7 @@
         </div>
       </section>
 
-      <section
-        class="popular-categories section-padding"
-        id="pages"
-      >
+      <section class="popular-categories section-padding" id="pages">
         <div class="container">
           <div class="section-text-arrows">
             <h2 class="section-heading">Popular Categories</h2>
