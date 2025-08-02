@@ -422,9 +422,8 @@ a{
     border: none;
     border-radius: 10px;
     background-color: #656b6b;
-    font-size: 16px;
-    color: #ffffff;
-    font-weight: 500;
+    width: 100%;
+    
 }
 .footer-btn-div button{
     padding: 12px 24px;
@@ -432,12 +431,25 @@ a{
     border-radius: 10px;
     background-image: linear-gradient(90deg,#465ee3 0%,#ad16bb 36%,#c12978 71%,#ce2b2e 100%);
     color: #ffffff;
+    position: relative;
+    right: 50px;
 }
 .footer-slide-3 h3{
     font-size: 17px;
     color: #ffffff;
     margin-top: 40px;
     margin-bottom: 22px;
+}
+input[type='email']{
+    background-color: #656b6b;
+    border: none;
+    padding: 5px;
+}
+input[type='email']::placeholder{
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 500;
+    
 }
 .footer-hr{
     color: #a3b0b1;
@@ -539,6 +551,26 @@ a{
         position: relative;
         right: 30px;
     }
+    .footer-btn-div{
+        width: 196px;
+        flex-direction: column;
+        padding: 8px 16px;
+        
+    }
+    .footer-btn-div button{
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg,#465ee3 0%,#ad16bb 36%,#c12978 71%,#ce2b2e 100%);
+    color: #ffffff;
+    position: relative;
+    right: 0px;
+    top: 3px;
+}
+input[type='email']::placeholder{
+    position: relative;
+    left: 52px;
+}
 }
 
 @media (max-width:767px){
