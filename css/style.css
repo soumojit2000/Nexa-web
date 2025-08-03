@@ -546,9 +546,11 @@ input[type="email"]::placeholder {
   }
   .footer-btn-div {
     width: 196px;
-    flex-direction: column;
-    padding: 8px 16px;
+    flex-direction: row;
+    padding: 8px 5px;
+    width: 100%;
   }
+
   .footer-btn-div button {
     padding: 12px 24px;
     border: none;
@@ -561,13 +563,18 @@ input[type="email"]::placeholder {
       #ce2b2e 100%
     );
     color: #ffffff;
+    font-size: 13px;
     position: relative;
     right: 0px;
-    top: 3px;
+    top: 0px;
   }
   input[type="email"]::placeholder {
     position: relative;
-    left: 52px;
+    left: 0px;
+    font-size: 10px;
+  }
+  input[type="email"] {
+    width: 100%;
   }
 }
 
@@ -575,6 +582,11 @@ input[type="email"]::placeholder {
   .banner-content {
     position: relative;
     top: 45px;
+  }
+  input[type="email"]::placeholder {
+    position: relative;
+    left: 0px;
+    font-size: 16px;
   }
 }
 
@@ -621,5 +633,15 @@ input[type="email"]::placeholder {
     align-items: start;
     gap: 10px;
     margin-right: 70px;
+  }
+  input[type="email"] {
+    background-color: #656b6b;
+    border: none;
+    padding: 5px;
+    width: 100%;
+  }
+  input[type="email"]::placeholder {
+    position: relative;
+    left: 38px;
   }
 }
