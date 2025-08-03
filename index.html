@@ -139,7 +139,7 @@
 
             <!-- Modal Body (Form) -->
             <div class="modal-body">
-              <form>
+              <form id="form">
                 <div class="mb-3">
                   <label for="loginEmail" class="form-label"
                     >Email address</label
@@ -172,7 +172,9 @@
               >
                 Close
               </button>
-              <button type="submit" class="btn btn-modal"><a href="#">Login</a></button>
+              <button type="submit" class="btn btn-modal">
+                <a href="#">Login</a>
+              </button>
             </div>
           </div>
         </div>
@@ -1356,7 +1358,12 @@
           <div class="col-12 col-sm-12 col-md-3 footer-slide-3">
             <h2>Get the latest NEXA Updates</h2>
             <div class="footer-btn-div">
-              <input type="email" name="email" id="email" placeholder="Your Email">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your Email"
+              />
               <a href="#"><button type="submit">SEND</button></a>
             </div>
             <h3>Join NEXA Community</h3>
@@ -1432,9 +1439,6 @@
       });
     </script>
 
-    <!-- normal js -->
-    <script src="./js/index.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <script>
@@ -1459,5 +1463,10 @@
         },
       });
     </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- normal js -->
+    <script src="./js/index.js"></script>
   </body>
 </html>

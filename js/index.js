@@ -1,65 +1,40 @@
-//input fields
-const mail=document.getElementById('mail_ph');
-const pwd=document.getElementById('pwd');
-const cnfrm_pwd= document.getElementById("cnfrm_pwd");
-
-//error fields
-const mailErr=document.querySelector('.mailErr');
-const pwdErr=document.querySelector('.pwdErr');
-const cnfrmErr=document.querySelector('.cnfrmErr');
 
 
-mail.addEventListener('input', mailCheck)
-pwd.addEventListener('input',pwdCheck)
-cnfrm_pwd.addEventListener('input',cnfrmCheck)
+$(document).ready(function () {
+    $(".btn-modal").click(function (e) {
+      e.preventDefault(); // Prevent default anchor tag behavior
 
-function mailCheck()
-{
-    let data=mail.value;
-    // console.log("Mail:",data);
+      var email = $("#loginEmail").val().trim();
+      var password = $("#loginPassword").val().trim();
 
-    if (data.length<1){
-        mailErr.innerHTML = "*Required field";
-    }
-    else if (data.length<10){
-        mailErr.innerHTML = "*minimum 10 characters required";
-    }
-    else{
-        mailErr.innerHTML = "";
-    }
-}
+      // Check if email is empty
+      if (email === "") {
+        alert("Please enter your email address.");
+        return;
+      }
 
-function pwdCheck()
-{
-   let data=pwd.value;
-   //console.log("Password:",data);
+      // Optional: Validate email format
+      var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!pattern.test(email)) {
+        alert("Please enter a valid email address.");
+        return;
+      }
 
-   if(data.length<1){
-    pwdErr.innerHTML = "*Required field";
-   }
-   else if(data.length<8){
-    pwdErr.innerHTML="*minimum 8 characters required";
-   }
-   else if (data.length>15){
-    pwdErr.innerHTML="maximum 15 characters allowed";
-   }
-   else {
-    pwdErr.innerHTML="";
-   }
-}
+      // Check if password is empty
+      if (password === "") {
+        alert("Please enter your password.");
+        return;
+      }
 
-function cnfrmCheck()
-{
-let password=pwd.value;
-let confirmPassword=cnfrm_pwd.value;
+      // ✅ Check if password is less than 8 characters
+      if (password.length < 8) {
+        alert("Password must be at least 8 characters long.");
+        return;
+      }
 
-    if(confirmPassword.length<1){
-        cnfrmErr.innerHTML="*Required field";
-    }
-    else if(password===confirmPassword){
-        cnfrmErr.innerHTML="";
-    }
-    else{
-        cnfrmErr.innerHTML="*Passwords do not match";
-    }
-}
+      // ✅ All validations passed
+      alert("Login Successful (Simulation)");
+      // Optionally submit the form
+      // $("#form").submit();
+    });
+  });
